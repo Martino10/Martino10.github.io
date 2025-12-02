@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Martin's Portfolio</title>
+    </head>
+    <body>
+        
+
+        <!-- INTRODUCTION -->
+        <section class="introduction">
+            <div class="introduction-text">
+                <h1>Hoi, ik ben Martin Krikke.</h1>
+                <h4><i>UX Designer</i></h4>
+                <p>
+                    Mijn passie zit hem in de User Experience, of dat nou gaat om websites, apps, games, hardware, etc. 
+                    Mijn doel is om allerlei soorten technologieën mooi, nuttig, en toegankelijk te maken voor jong en oud.
+                    Als ik geloof in een project, dan doe ik er alles aan om die succesvol te laten verlopen. 
+                    Ik heb oog voor detail en, ookal ben ik een verlegen jongen, ik laat mijn stem graag horen als ik weet dat het beter kan.
+                </p>
+            </div>
+            <container class="header-image-container">
+                <img src="images/koelefoto.png" alt="Dit ben ik">
+            </container>
+            <container class="contact-info-container">
+                <h2>Contact info en links</h2>
+                <div class="contact-info-item">
+                    <p>Stuur mij een email</p>
+                    <a href="mailto:martin.krikke10@gmail.com" class="contact-button-container">
+                        <button class="contact-button"><i class="fa fa-envelope fa-xl"></i></button>
+                    </a>
+                </div>
+                <div class="contact-info-item">
+                    <p>Bekijk mijn linkedin</p>
+                    <a href="https://linkedin.com/in/martin-krikke-4a299a225" target="_blank" class="contact-button-container">
+                        <button class="contact-button"><i class="fa-brands fa-square-linkedin fa-xl"></i></button>
+                    </a>
+                </div>
+                <div class="contact-info-item">
+                    <p>Bekijk mijn CV</p>
+                    <a href="content\CV_2025.pdf" target="_blank" class="contact-button-container">
+                        <button class="contact-button"><i class="fa-regular fa-address-card fa-xl"></i></button>
+                    </a>
+                </div>
+            </container>
+        </section>
+
+        <!-- PORTFOLIO GALLERY -->
+        <main class="portfolio">
+            <header>
+                <h2>Neem vooral een kijkje naar mijn porfolio:</h2>
+            </header>
+            <!-- First row: image + text -->
+            <section class="portfolio-item">
+                <!-- slideshow -->
+                <div class="slideshow-and-dots-container" id="slideshow1">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                             <video class="portfolio-image" autoplay loop preload>
+                                <source src="videos/OnboardingGame_MainMenu.mp4" type="video/mp4" alt="KLM Onboarding Game Main Menu">
+                                Your browser does not support the video tag.
+                             </video>
+                            <div class="text">De KLM Onboarding Game</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="images/KLMGameCharacterCustomizer.png" alt="KLM Onboarding Game Character Customizer" class="portfolio-image">
+                            <div class="text">De Character Customizer</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="images/KLMGameNavigation.png" alt="KLM Onboarding Game navigation" class="portfolio-image">
+                            <div class="text">Navigeren naar een Waypoint</div>
+                        </div>
+                    </div>
+                    <br>
+                    <div style="text-align: center;">
+                        <span class="dot" onclick="currentSlide(1, 'slideshow1')"></span>
+                        <span class="dot" onclick="currentSlide(2, 'slideshow1')"></span>
+                        <span class="dot" onclick="currentSlide(3, 'slideshow1')"></span>
+                    </div>
+                </div>
+                <div class="portfolio-text">
+                    <h3>Onboarding Game - KLM E&M Stage (2023) - Game</h3>
+                    <p>
+                        In 2023 heb ik 5 maanden stage gelopen bij KLM E&M. In een groep van vijf werkte ik toen aan de <b>'Onboarding Game'</b> in de <b>Godot Game Engine</b>.
+                        Het idee was dat nieuwe werknemers met behulp van deze game op een leuke manier alvast bekend konden worden met hun nieuwe werkzaamheden.
+                        Ik heb me voornamelijk gericht op het <b>programmeren</b> van de game, het ontwerpen van de <b>UI</b>, en het nabouwen van het KLM terrein, waar spelers dus zullen rondlopen, met behulp van TileSets.
+                        Binnen het team ben ik ook aangewezen als <b>Communications Lead</b>. Communicatie met de opdrachtgever en met andere afdelingen verliep dus voornamelijk via mij.
+                        Tijdens deze stage heb ik onderzoek gedaan naar <b>Pathfinding Algoritmes</b>. 
+                        Met dit onderzoek heb ik succesvol een navigatie systeem in de game kunnen bouwen (zie: slide 3).
+                        <br><br>
+                        Ik heb erg veel geleerd tijdens deze stageperiode. Ook heb ik een erg leuke tijd gehad, de sfeer binnen de groep was erg gezellig wat een positief effect had op elkaars stemming en productiviteit. 
+                        We hebben veel geleerd van elkaar, zo heb ik ook zelf wat pixel-art kunnen maken! Dat had ik van tevoren niet verwacht. <br>
+                        Het was vooral erg leerzaam om mij zo te mengen in het bedrijf en de hiërarchie. We moesten vaak onze voortgang presenteren, met verschillende hoeveelheden aan toeschouwers.
+                        Ik merkte vooral aan mezelf hoe vocaal ik kon zijn als het ging om het succes van een product waar ik gehecht aan was. Ik merkte dat dit positieve gevolgen had voor de game.
+                        Ik zag mezelf altijd als een 'achtergrond werker', maar in dit project nam ik meer een leidende rol. 
+                        Niet omdat ik die opeiste, maar omdat ik uit mezelf initiatief nam waar ik voelde dat dat nodig was.<br><br>
+                        
+                        <a href="content/onboarding_game_demo_vid.mp4" target="_blank">
+                            <button class="view_project_btn"><b>Onboarding Game Demo Video</b></button>
+                        </a>
+                        
+                        
+                    </p>
+                </div>
+            </section>
+
+            <!-- Second row: text + image -->
+            <section class="portfolio-item reverse">
+                <div class="portfolio-text">
+                    <h3>The Waiting App - Individueel Schoolproject (2025) - Mobile App</h3>
+                    <p>
+                        In 2025 heb ik voor een schoolproject in het teken van <b>mobile development</b>, heb ik <b>The Waiting App</b> gemaakt. Op het idee kwam ik al voordat ik het vak volgde.
+                        Binnen mijn vriendengroep is het namelijk een regelmatigheid dat we vaak op mensen moeten wachten, en op sommigen meer dan anderen. <br><br>
+                        Daarom heb ik deze app bedacht. De structuur ervan is vergelijkbaar met de 'Wie Betaalt Wat?' app. 
+                        Je kan een profiel aanmaken, waarna je vervolgens een groep kan maken en daar je vrienden voor kan uitnodigen.
+                        De hoofdpagina is een soort stopwatch. Je drukt op een knop om te beginnen met wachten, en drukt er nogmaals op wanneer je klaar bent met wachten.
+                        Vervolgens wordt er een 'wacht sessie' aangemaakt. Je geeft dan aan op wie je moest wachten, en wie er allemaal op diegene(n) moesten wachten.
+                        Ook kan je er extra informatie bij geven, en instellen of je de locatie van het wachten ook zichtbaar wilt hebben. Op slide 3 is te zien hoe zo'n wacht sessie eruit ziet.
+                        Op deze manier kan de app bijhouden wat de totale tijd is die je groep heeft besteed aan wachten, en kun je als groep je vrienden confronteren met objectieve data over hun vertragingen!<br><br>
+                        Voor het bouwen van de app heb ik <b>Flutter</b> gebruikt, en voor de accounts en het lezen/opslaan van data heb ik <b>Firebase Authentication</b> en <b>Firebase Realtime Database</b> gebruikt.
+                        <br><br>
+                        <a href="content/eindoplevering_TWA.mp4" target="_blank">
+                            <button class="view_project_btn"><b>The Waiting App Video Oplevering</b></button>
+                        </a>
+                        
+                    </p>
+                </div>
+                <!-- slideshow -->
+                <div class="slideshow-and-dots-container" id="slideshow2">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade" style="width: auto;">
+                            <img src="images/TWA_home.png" alt="The Waiting App Home screen" class="portfolio-image" style="width: auto;">
+                            <div class="text">The Waiting App Hoofdmenu</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="images/TWA_groupboard.png" alt="The Waiting App Group Stats" class="portfolio-image" style="width: auto;">
+                            <div class="text">Groepsstatistieken</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="images/TWA_sessions.png" alt="The Waiting App Session List" class="portfolio-image" style="width: auto;">
+                            <div class="text">Sessie lijst</div>
+                        </div>
+                    </div>
+                    <br>
+                    <div style="text-align: center;">
+                        <span class="dot" onclick="currentSlide(1, 'slideshow2')"></span>
+                        <span class="dot" onclick="currentSlide(2, 'slideshow2')"></span>
+                        <span class="dot" onclick="currentSlide(3, 'slideshow2')"></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Third row: image + text -->
+            <section class="portfolio-item">
+                <!-- slideshow -->
+                <div class="slideshow-and-dots-container" id="slideshow3">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade" style="width: auto;">
+                            <img src="images/SmartBrievenbusVoorkant.jpeg" alt="Smart Brievenbus Voorkant" class="portfolio-image" style="width: auto;">
+                            <div class="text">De Smart Brievenbus</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="images/SmartBrievenbusZijkant.jpeg" alt="Smart Brievenbus Zijkant" class="portfolio-image" style="width: auto;">
+                            <div class="text">De Smart Brievenbus (zijkant)</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="images/SmartBrievenbusApp.jpeg" alt="Smart Brievenbus App" class="portfolio-image" style="width: auto;">
+                            <div class="text">De Smart Brievenbus App</div>
+                        </div>
+                    </div>
+                    <br>
+                    <div style="text-align: center;">
+                        <span class="dot" onclick="currentSlide(1, 'slideshow3')"></span>
+                        <span class="dot" onclick="currentSlide(2, 'slideshow3')"></span>
+                        <span class="dot" onclick="currentSlide(3, 'slideshow3')"></span>
+                    </div>
+                </div>
+                <div class="portfolio-text">
+                    <h3>Smart Brievenbus - Minor Sensortechnologie (2023/2024) - Internet of Things</h3>
+                    <p>
+                        In 2023/2024 heb ik de minor <b>Sensortechnologie</b> gevolgd, ook op de Hogeschool Leiden. Hier heb ik veel geleerd over de hardware kant van IT.
+                        De minor bestond uit een examen en uit een project. Het project heb ik samen met een klasgenoot gedaan, en met succes. Ik ben erg blij met het eindproduct. <br><br>
+                        Ons product was een 'Smart Brievenbus'; een brievenbus met allerlei sensoren die gebruikers (ontvangers van post) veel nuttige informatie kan geven over hun post.
+                        Wanneer er post binnenkomt, registreert de brievenbus dit. Het neemt dan een foto van de post, weegt af hoe zwaar het is, en kijkt het hoe vol de brievenbus is. 
+                        Zo kan het een gok maken of het om een brief of een pakketje gaat, en weet de gebruiker of ze de post moeten/willen legen of niet.
+                        De sensoren die dit doen zijn verbonden met een <b>Arduino Mega</b>. De rauwe data wordt naar een <b>Raspberry PI</b> verzonden. 
+                        Die maakt een foto en verstuurt deze met de rauwe data naar ons <b>Laravel</b> project, die op een VPS gehost wordt. Hier wordt de dataverwerking verzorgd.
+                        Deze verwerkte data wordt vervolgens op de API pagina gezet, waar de app de nodige data kan ophalen om deze aan de gebruiker te laten zien.
+                        Wanneer de app een nieuwe entry detecteert, krijgt de gebruiker een notificatie. <br><br>
+                        Ook zit er een security aspect aan de brievenbus. Dit wordt verzorgd door verschillende sensoren en actuatoren. 
+                        Zo gebruiken we een vingerafdruksensor voor authenticatie, en een servo voor het openen en sluiten van de brievenbus. Dit wordt allemaal met een <b>Arduino Uno</b> verzorgd.
+                        <br><br>
+                        Zelf heb ik aan zo'n beetje alles gewerkt behalve de app. Ook heb ik hulp gehad bij het bouwen van de brievenbus, maar heb ik het wel zelf ontworpen in <b>Blender</b>.<br><br>
+                        
+                        <a href="content/Eindverslag_isensiot.pdf" target="_blank">
+                            <button class="view_project_btn"><b>Smart Brievenbus Eindverslag</b></button>
+                        </a>
+
+                    </p>
+                </div>
+            </section>
+
+            <!-- Fourth row: text + image -->
+            <section class="portfolio-item reverse">
+                <div class="portfolio-text">
+                    <h3>AlliGAITor - Groepsgewijs Schoolproject (2024/2025)- Mobile App</h3>
+                    <p>
+                        In 2024/2025 heb ik met een groep van vier aan ons hoofdfaseproject gewerkt. Wij kregen de opdracht om een app te maken voor fysiotherapie studenten.
+                        Deze app zou fysiotherapeuten moeten assisteren bij het uitvoeren van een loopgang (GAIT) analyse, of de patient dus goed loopt.
+                        Uiteindelijk hebben we een app kunnen maken waar de gebruiker twee telefoons aan elkaar kan verbinden, de ene telefoon filmt de zijkant en de andere filmt de achterkant.
+                        Als de ene begint met filmen, begint de andere precies tegelijk, zodat de fysiotherapeut de video's uiteindelijk naast elkaar kan zien.
+                        <br><br>
+                        Mijn taak was vooral het bouwen van de video/analyse pagina. Hier kan de gebruiker door de video's navigeren. 
+                        Mocht er een moment in de video zijn waar de fysiotherapeut metingen wilt uitvoeren, dan kunnen ze "marker mode" activeren (zie: slide 1).
+                        In Marker mode kunnen de nodige markers getekend worden op de juiste gewrichten. De hoeken van de gewrichten worden automatisch berekend en weergegeven.
+                        Als de fysiotherapeut tevreden is met de markers, dan kan het moment worden opgeslagen om later nog te bekijken. 
+                        Ze kunnen het moment dan een naam geven, de naam van de loopfase aangeven, en eventueel notities noteren. 
+                        <br><br>
+                        De verschillende opgeslagen momenten inclusief hun gegevens kunnen dan teruggevonden worden in marker mode, en in het archief (zie: slide 2 en 3).
+                        <br><br>
+                        Ook deze app hebben we met <b>Flutter</b> gebouwd. <br><br>
+                        
+                        <a href="content/Eindpresentatie Alligaitor.pdf" target="_blank">
+                            <button class="view_project_btn"><b>Alligaitor Eindpresentatie</b></button>
+                        </a> 
+                        
+                    </p>
+                </div>
+                <!-- slideshow -->
+                <div class="slideshow-and-dots-container" id="slideshow4">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade" style="width: auto;">
+                            <video class="portfolio-image" autoplay loop preload style="width: auto;">
+                                <source src="videos/markers_plaatsen_final.mp4" type="video/mp4" alt="Alligaitor Markers Plaatsen">
+                                Your browser does not support the video tag.
+                             </video>
+                            <div class="text">Analyse met markers</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <video class="portfolio-image" autoplay loop preload style="width: auto;">
+                                <source src="videos/moment_navigator_final.mp4" type="video/mp4" alt="Alligaitor Moment navigatie">
+                                Your browser does not support the video tag.
+                             </video>
+                            <div class="text">Moment navigatie</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="images/alligaitor_archief.jpg" alt="Alligaitor Sessie Archief" class="portfolio-image" style="width: auto;">
+                            <div class="text">Opgeslagen sessie</div>
+                        </div>
+                    </div>
+                    <br>
+                    <div style="text-align: center;">
+                        <span class="dot" onclick="currentSlide(1, 'slideshow4')"></span>
+                        <span class="dot" onclick="currentSlide(2, 'slideshow4')"></span>
+                        <span class="dot" onclick="currentSlide(3, 'slideshow4')"></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fifth row: image + text -->
+            <section class="portfolio-item">
+                <!-- slideshow -->
+                <div class="slideshow-and-dots-container" id="slideshow5">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade" style="width: auto;">
+                            <img src="images/Time2ShareItems.png" alt="Time2Share Items" class="portfolio-image">
+                            <div class="text">Items browsen</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="images/Time2ShareEdit.png" alt="Time2Share Edit Profile" class="portfolio-image">
+                            <div class="text">Profiel bewerken</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="images/Time2ShareReview.png" alt="Time2Share Review" class="portfolio-image">
+                            <div class="text">Profiel review</div>
+                        </div>
+                    </div>
+                    <br>
+                    <div style="text-align: center;">
+                        <span class="dot" onclick="currentSlide(1, 'slideshow5')"></span>
+                        <span class="dot" onclick="currentSlide(2, 'slideshow5')"></span>
+                        <span class="dot" onclick="currentSlide(3, 'slideshow5')"></span>
+                    </div>
+                </div>
+                <div class="portfolio-text">
+                    <h3>Time2Share - Individueel Schoolproject (2022) - Website</h3>
+                    <p>
+                        Time2Share is een full-stack website die ik in jaar 2 van mijn hogeschool tijd heb gebouwd.
+                        Voor het maken van de website en de bijbehorende database heb ik <b>Laravel</b> gebruikt. Zelf vond ik dit een erg handig framework.
+                        Het idee van de site is dat je producten kan lenen en uitlenen. Je kan items browsen om te lenen, je kan op categorieën filteren,
+                        je eigen account aanmaken en andere accounts bekijken en zelfs reviews geven.
+                        <br><br>
+                        Sinds die tijd ben ik ver gekomen, maar ik kijk met trots terug op deze website. 
+                        Ik vind dat het goed laat zien wat mijn sterke punten zijn als UX designer; het ontwerp is net en minimalistisch, maar heeft toch veel polish.
+                        Het zijn vooral de 'kleine' dingen waar ik trots op ben: De 'Loaned out' ribbon om de item kaartjes, de rijen in persoonsgegevens die subtiel
+                        van kleur veranderen als je erover heen hovert, het feit dat je als user elk stukje info individueel kan bewerken en dat dat dan ook gelijk in de 
+                        database wordt aangepast (dat was moeilijker dan het klinkt), maar vooral het beoordelingssysteem (zie: slide 3): 
+                        <br><br>
+                        Als je een profiel beoordeelt staan er 5 sterren die als een soort slider werken. 
+                        Je kan met je cursor de beoordeling aanpassen door zowel te slepen of te klikken, de sterren worden dan seemless met een blauwe kleur gevuld op basis van de score. 
+                        Rechts van de sterren staat dan met 1 decimaal de beoordeling die je daarmee geeft. 
+                        Na het bevestigen van de review wordt de gemiddelde rating van de user ook gelijk aangepast.
+                        <br><br>
+                        Ook dit was eigenlijk best wat werk om zo netjes te laten werken. Het is één van die dingen die je als gebruiker minder opvalt, soms vind ik dat jammer.
+                        Echter zeg ik ook graag: <b>"Als het de gebruiker niet opvalt, betekent het dat het goed werkt."</b>.
+                        <br><br>
+                        
+                        <a href="content/iatbd_eindproduct.mp4" target="_blank">
+                            <button class="view_project_btn"><b>Time2Share Video Oplevering</b></button>
+                        </a>
+
+                    </p>
+                </div>
+            </section>
+
+            <!-- Sixth row: text + image -->
+            <section class="portfolio-item reverse">
+                <div class="portfolio-text">
+                    <h3>Ultimate Foosball - Individueel Schoolproject (2024) - Game</h3>
+                    <p>
+                        Als schoolproject voor een module over frameworks heb ik deze game gemaakt.
+                        Voor deze module moesten we een framework uitkiezen, daar een cursus over volgen, en uiteindelijk een eigen project opleveren met dat framework.
+                        Zelf heb ik de <b>Godot Game Engine</b> gekozen. Daar heb ik dus ook een <b>Udemy</b> cursus voor gevolgd.
+                        <br><br>
+                        Ultimate Foosball is een game die de ervaring van tafelvoetbal nabootst. Ik ben best blij met hoe de gameplay samen is gekomen.
+                        Het voelt namelijk net alsof je in het echt tafelvoetbal speelt, dat klungige van telkens van "staaf" moeten veranderen en af en toe de bal missen of raar raken,
+                        en de momenten waar de bal voor een tijdje even niet in de buurt is van een speler zie je veel terug in de game.
+                        <br><br>
+                        Er waren een aantal uitdagingen waar ik vooral op heb gefocust: de CPU programmeren, zodat je in je eentje tegen de computer kan spelen
+                        (natuurlijk kan je ook tegen een vriend spelen die fysiek bij je is), het implementeren van verschillende toernooi formats 
+                        (group stage + knockout, knockout only, league), en verschillende opties daarin zoals het aantal teams dat meedoen, 
+                        en een kleinere functie waar je zelfs je eigen formatie kan kiezen én creëren (zolang je natuurlijk bij de 10 veldspelers blijft!).
+                        <br><br>
+                        Ik heb de module uiteindelijk ruim voldoende afgerond, mede dankzij het feit dat ik ambitieuzer was met het spel dan eigenlijk nodig was voor een voldoende.
+                        
+                    </p>
+                </div>
+                <!-- slideshow -->
+                <div class="slideshow-and-dots-container" id="slideshow6">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade" style="width: auto;">
+                            <img src="images/UltimateFoosballMenu.png" alt="Ultimate Foosball Menu" class="portfolio-image">
+                            <div class="text">Hoofdmenu</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="images/UltimateFoosballSetup.png" alt="Ultimate Foosball Setup" class="portfolio-image">
+                            <div class="text">Toernooi Setup</div>
+                        </div>
+                        <div class="mySlides fade" style="width: auto;">
+                            <video class="portfolio-image" autoplay loop preload muted>
+                                <source src="videos/UltimateFoosballClip.mp4" type="video/mp4" alt="Ultimate Foosball Gameplay Clip">
+                                Your browser does not support the video tag.
+                             </video>
+                            <div class="text">Gameplay</div>
+                        </div>
+                    </div>
+                    <br>
+                    <div style="text-align: center;">
+                        <span class="dot" onclick="currentSlide(1, 'slideshow6')"></span>
+                        <span class="dot" onclick="currentSlide(2, 'slideshow6')"></span>
+                        <span class="dot" onclick="currentSlide(3, 'slideshow6')"></span>
+                    </div>
+                </div>
+            </section>
+
+            <p style="font-size: smaller;">Website gemaakt door Martin Krikke, 2025.</p>
+        </main>
+
+        <!-- BACKGROUND GFX -->
+        <div class="background-gfx">
+            <img src="images/background_gfx_top.png" alt="top background" class="top-of-background-gfx">
+
+            <div class="bottom-sections">
+                <img src="images/background_gfx_bottom.png" alt="bottom section" class="bottom-of-background-gfx">
+                <img src="images/background_gfx_bottom.png" alt="bottom section flipped" class="bottom-of-background-gfx flipped">
+                <img src="images/background_gfx_bottom.png" alt="bottom section" class="bottom-of-background-gfx">
+                <img src="images/background_gfx_bottom.png" alt="bottom section flipped" class="bottom-of-background-gfx flipped">
+            </div>
+        </div>
+        <script src="scripts/main.js"></script>
+        <script src="https://kit.fontawesome.com/44b50b7f75.js" crossorigin="anonymous"></script>
+    </body>
+</html>

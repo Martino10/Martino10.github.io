@@ -1,0 +1,286 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* ------------------------------------------
+   BACKGROUND GRAPHICS
+------------------------------------------- */
+.background-gfx {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -2;
+}
+
+.top-of-background-gfx {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25rem;
+  max-width: 45vw;
+  height: auto;
+  z-index: -1;
+}
+
+.bottom-sections {
+  position: absolute;
+  top: 20rem;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: -2;
+}
+
+.bottom-of-background-gfx {
+  width: 35rem;
+  max-width: 80vw;
+  height: auto;
+}
+
+.bottom-of-background-gfx.flipped {
+  transform: scaleY(-1);
+  align-self: flex-end;
+}
+
+/* ------------------------------------------
+   INTRODUCTION SECTION
+------------------------------------------- */
+
+.introduction {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  padding: 4rem;
+  background-image: linear-gradient(to bottom, #f9f9f9, #E0FFFF);
+  flex-wrap: wrap;
+}
+
+.introduction-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  flex: 1;
+}
+
+.introduction-text h1,
+.introduction-text h4 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.introduction-text p {
+  margin-top: 0.5rem;
+}
+
+.header-image-container {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  min-width: 250px;
+}
+
+.header-image-container img {
+  width: 100%;
+  max-width: 20rem;
+  border-radius: .5rem;
+  border: 3px solid black;
+  box-shadow: 0 8px 8px rgba(0,0,0,0.2);
+}
+
+.contact-info-container {
+  padding: 1rem;
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(18px);
+  border: 3px solid black;
+  box-shadow: 0 8px 8px rgba(0,0,0,0.2);
+  max-width: 22rem;
+  flex: 1;
+}
+
+/* Grid stacks into a single column on mobile */
+.contact-info-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+/* Buttons */
+.contact-button,
+.view_project_btn {
+  background-color: #E0FFFF;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.2);
+  transition: all 0.2s ease;
+}
+
+.contact-button:hover,
+.view_project_btn:hover {
+  background-color: #a3ffff;
+  cursor: pointer;
+  box-shadow: 0 6px 6px rgba(0,0,0,0.1);
+}
+
+/* ------------------------------------------
+   PORTFOLIO GALLERY
+------------------------------------------- */
+
+header {
+  background-color: rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: center;
+}
+
+.portfolio-item.reverse {
+  grid-template-columns: 2fr 1fr;
+}
+
+.portfolio-image {
+  width: 100%;
+  max-width: 30rem;
+  max-height: 30rem;
+  border-radius: 10px;
+  border: 3px solid black;
+  object-fit: contain;
+  box-shadow: 4px 16px 16px rgba(0,0,0,0.2);
+}
+
+.portfolio-text {
+  padding: 1rem;
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(18px);
+  box-shadow: 0 8px 8px rgba(0,0,0,0.2);
+}
+
+/* ------------------------------------------
+   SLIDESHOW
+------------------------------------------- */
+.slideshow-container {
+  width: 100%;
+  max-width: 30rem;
+  margin: auto;
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.text {
+  color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(to bottom, #00000022, #000000cc);
+  border-radius: 10px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 3px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fade animation */
+.fade {
+  animation: fade 1.5s;
+}
+
+@keyframes fade {
+  from { opacity: .4 }
+  to { opacity: 1 }
+}
+
+/* ------------------------------------------
+   RESPONSIVE BREAKPOINTS
+------------------------------------------- */
+
+/* Tablets: Fix spacing, reduce gaps */
+@media (max-width: 900px) {
+
+  .introduction {
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .portfolio-item,
+  .portfolio-item.reverse {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .portfolio-text {
+    text-align: left;
+  }
+
+  .contact-info-item {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+  }
+}
+
+/* Phones: Full mobile optimization */
+@media (max-width: 600px) {
+
+  .introduction {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .introduction-text {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .portfolio-item {
+    padding: 1.5rem 1rem;
+  }
+
+  .portfolio-image {
+    max-width: 100%;
+  }
+
+  .slideshow-container {
+    max-width: 90%;
+  }
+
+  .top-of-background-gfx {
+    width: 50vw;
+  }
+}
