@@ -19,7 +19,6 @@ function currentSlide(n, slideshowId) {
 }
 
 function showSlides(n, slideshowId) {
-    let i;
     const container = document.getElementById(slideshowId);
     const slides = container.querySelectorAll(".mySlides");
     const dots = container.querySelectorAll(".dot");
@@ -32,6 +31,9 @@ function showSlides(n, slideshowId) {
 
     slides[slideIndices[slideshowId] - 1].style.display = "block";
     dots[slideIndices[slideshowId] - 1].classList.add("active");
+    if (n == 3 && slideshowId == 6) {
+        // Start ultimate foosball gameplay video from beginning
+    }
 }
 
 // Optional: separate timers per slideshow
