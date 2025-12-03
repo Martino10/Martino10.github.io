@@ -1,6 +1,8 @@
 // Store a separate slide index for each slideshow
 let slideIndices = {};
 
+let foosballclip = document.getElementById("foosballclip");
+
 // Initialize all slideshows on page load
 document.querySelectorAll(".slideshow-and-dots-container").forEach(slideshow => {
     const id = slideshow.id;
@@ -31,8 +33,9 @@ function showSlides(n, slideshowId) {
 
     slides[slideIndices[slideshowId] - 1].style.display = "block";
     dots[slideIndices[slideshowId] - 1].classList.add("active");
-    if (n == 3 && slideshowId == 6) {
+    if (n == 3 && slideshowId == 'slideshow6') {
         // Start ultimate foosball gameplay video from beginning
+        foosballclip.load();
     }
 }
 
